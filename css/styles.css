@@ -115,7 +115,7 @@ nav {
   color: var(--contact-color);
 }
 
-.contact__image {
+.contact__icon {
   margin-right: 10px;
   fill: currentColor;
 }
@@ -132,19 +132,19 @@ nav {
   transition: color 250ms var(--cubic-bezier);
 }
 
-.hero-content {
+.hero {
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/hero-bg.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: auto auto;
 }
 
-.hero-content .container {
+.hero > .container {
   padding-top: 106px;
   padding-bottom: 106px;
 }
 
-.hero-content h1 {
+.hero__title {
   text-align: center;
   text-transform: uppercase;
   font-weight: 900;
@@ -155,7 +155,7 @@ nav {
   margin-bottom: 30px;
 }
 
-.hero-button,
+.hero__button,
 .modal-form-button {
   display: block;
   margin: 0 auto;
@@ -173,13 +173,13 @@ nav {
   cursor: pointer;
 }
 
-.examples-content {
+.examples {
   font-size: 14px;
   letter-spacing: 0.03em;
 }
 
-.examples-cards,
-.examples-info-cards,
+.examples__cards,
+.examples__work-cards,
 .portfolio,
 .team-cards,
 .client-cards {
@@ -188,49 +188,49 @@ nav {
   gap: 30px;
 }
 
-.examples-cards li,
+.examples__item,
 .team-cards li {
   flex-basis: calc((100% - 90px) / 4);
 }
 
-.examples-info-cards li,
+.examples__work-item,
 .portfolio li {
   flex-basis: calc((100% - 60px) / 3);
 }
 
-.examples-cards li h3 {
+.examples__label {
   font-weight: 700;
   line-height: 1.1;
   text-transform: uppercase;
   color: var(--brand-color);
 }
 
-.examples-cards .examples-icons-bg {
+.examples__icon-bg {
   background-color: var(--team-color);
   padding: 25px 100px;
   margin-bottom: 30px;
   border-radius: var(--border-radius);
 }
 
-.examples-cards li p {
+.examples__content {
   margin: 10px 0 96px;
   font-weight: 400;
   line-height: 1.7;
   color: var(--contact-color);
 }
 
-.examples-info-cards figure {
+.examples__work-image {
   position: relative;
 }
 
-.examples-info-cards figcaption {
+.examples__work-label {
   position: absolute;
   bottom: 0;
   background-color: var(--boxed-color);
   width: 100%;
 }
 
-.examples-info-cards .examples-info-text {
+.examples__work-text {
   padding: 27px 0;
   color: var(--white-color);
   font-weight: 700;
@@ -241,7 +241,7 @@ nav {
   text-transform: uppercase;
 }
 
-.examples-content h2,
+.examples__title,
 .team-content h2,
 .client-content h2 {
   margin-bottom: 50px;
@@ -258,7 +258,7 @@ nav {
 }
 
 footer,
-.hero-content {
+.hero {
   background-color: var(--bg-color);
 }
 
