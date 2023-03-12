@@ -1,5 +1,4 @@
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -47,8 +46,15 @@ svg {
   padding: 94px 0;
 }
 
-.page-header {
+.header {
   border-bottom: 1px solid #ececec;
+}
+
+.header > .container {
+  display: flex;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .logo {
@@ -57,33 +63,23 @@ svg {
   text-decoration: none;
   line-height: 1.2;
   color: var(--black-color);
+  margin-right: 93px;
 }
 
 .logo-white {
   color: var(--white-color);
 }
 
-.page-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.page-nav nav {
-  margin-left: 93px;
+nav {
   flex-grow: 1;
 }
 
-.nav-links {
+.nav {
   display: flex;
+  gap: 46px;
 }
 
-.nav-links li:not(:last-child) {
-  margin-right: 46px;
-}
-
-.nav-links li a {
-  padding: 32px 0;
+.nav__link {
   color: var(--brand-color);
   font-weight: 500;
   font-size: 14px;
@@ -92,15 +88,15 @@ svg {
   text-decoration: none;
 }
 
-.nav-links .is-active {
+.nav__link.is-active {
   position: relative;
   color: var(--link-color);
 }
 
-.nav-links .is-active::after {
+.nav__link.is-active::after {
   position: absolute;
   content: '';
-  bottom: 0;
+  bottom: -32px;
   left: 0;
   width: 100%;
   height: 4px;
@@ -108,29 +104,30 @@ svg {
   border-radius: 2px;
 }
 
-.contact-links li a {
+.contact {
+  display: flex;
+  gap: 30px;
+}
+
+.contact__link {
   display: flex;
   align-items: center;
   color: var(--contact-color);
 }
 
-.contact-links li:not(:last-child) {
-  margin-right: 30px;
-}
-
-.contact-links li a svg {
+.contact__image {
   margin-right: 10px;
   fill: currentColor;
 }
 
-.logo .logo-blue {
+.logo--blue {
   color: var(--link-color);
 }
 
-.nav-links li a:hover,
-.nav-links li a:focus,
-.contact-links li a:hover,
-.contact-links li a:focus {
+.nav__link:hover,
+.nav__link:focus,
+.contact__link:hover,
+.contact__link:focus {
   color: var(--link-color);
   transition: color 250ms var(--cubic-bezier);
 }
