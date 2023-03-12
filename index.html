@@ -60,7 +60,7 @@
         <div class="container">
           <ul class="examples__cards">
             <li class="examples__item">
-              <div class="examples__icon-bg">
+              <div class="examples__icon">
                 <svg width="70" height="70">
                   <use href="images/icons.svg#icon-antenna"></use>
                 </svg>
@@ -72,7 +72,7 @@
               </p>
             </li>
             <li class="examples__item">
-              <div class="examples__icon-bg">
+              <div class="examples__icon">
                 <svg width="70" height="70">
                   <use href="images/icons.svg#icon-clock"></use>
                 </svg>
@@ -84,7 +84,7 @@
               </p>
             </li>
             <li class="examples__item">
-              <div class="examples__icon-bg">
+              <div class="examples__icon">
                 <svg width="70" height="70">
                   <use href="images/icons.svg#icon-diagram"></use>
                 </svg>
@@ -96,7 +96,7 @@
               </p>
             </li>
             <li class="examples__item">
-              <div class="examples__icon-bg">
+              <div class="examples__icon">
                 <svg width="70" height="70">
                   <use href="images/icons.svg#icon-astronaut"></use>
                 </svg>
@@ -108,44 +108,44 @@
               </p>
             </li>
           </ul>
-          <h2 class="examples__title">Czym się zajmujemy</h2>
-          <ul class="examples__work-cards">
-            <li class="examples__work-item">
-              <figure class="examples__work-image">
+          <h2 class="work__title">Czym się zajmujemy</h2>
+          <ul class="work__cards">
+            <li class="work__item">
+              <figure class="work__image">
                 <img
                   src="./images/box-1.jpg"
                   alt="Schemat blokowy na kartce papieru, dłonie na klawiaturze, tablet i monitor"
                   width="370"
                   height="294"
                 />
-                <figcaption class="examples__work-label">
-                  <p class="examples__work-text">Aplikacje komputerowe</p>
+                <figcaption class="work__label">
+                  <p class="work__text">Aplikacje komputerowe</p>
                 </figcaption>
               </figure>
             </li>
-            <li class="examples__work-item">
-              <figure class="examples__work-image">
+            <li class="work__item">
+              <figure class="work__image">
                 <img
                   src="./images/box-2.jpg"
                   alt="Dłonie trzymają smartfon i dotykają laptopa"
                   width="370"
                   height="294"
                 />
-                <figcaption class="examples__work-label">
-                  <p class="examples__work-text">Aplikacje mobilne</p>
+                <figcaption class="work__label">
+                  <p class="work__text">Aplikacje mobilne</p>
                 </figcaption>
               </figure>
             </li>
-            <li class="examples__work-item">
-              <figure class="examples__work-image">
+            <li class="work__item">
+              <figure class="work__image">
                 <img
                   src="./images/box-3.jpg"
                   alt="Dłonie trzymają tablet i rysik, w tle iMac"
                   width="370"
                   height="294"
                 />
-                <figcaption class="examples__work-label">
-                  <p class="examples__work-text">Rozwiązania graficzne</p>
+                <figcaption class="work__label">
+                  <p class="work__text">Rozwiązania graficzne</p>
                 </figcaption>
               </figure>
             </li>
@@ -371,56 +371,56 @@
         </div>
       </section>
     </main>
-    <footer>
-      <div class="footer container">
-        <div class="footer-address">
-          <a href="/" class="logo logo-white"> <span class="logo--blue">Web</span>Studio </a>
+    <footer class="footer">
+      <div class="container">
+        <div class="address">
+          <a href="/" class="logo logo--white"> <span class="logo--blue">Web</span>Studio </a>
           <address>
-            <p>m. Warszawa, Aleje Jerozolimskie 21</p>
-            <p><a href="mailto:info@example.com">info@example.com</a></p>
-            <p><a href="tel:+48111111111">+48 111 111 111</a></p>
+            <p class="address__content">m. Warszawa, Aleje Jerozolimskie 21</p>
+            <p class="address__content"><a class="address__link" href="mailto:info@example.com">info@example.com</a></p>
+            <p class="address__content"><a class="address__link" href="tel:+48111111111">+48 111 111 111</a></p>
           </address>
         </div>
-        <div class="footer-social">
-          <h4>Dołącz do nas</h4>
-          <ul class="footer-social-icons">
-            <li>
-              <a href="#">
-                <svg class="footer-social-icon" width="20" height="20">
+        <div class="social">
+          <h4 class="social__title">Dołącz do nas</h4>
+          <ul class="social__icons">
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <svg width="20" height="20">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
-            <li>
-              <a href="#">
-                <svg class="footer-social-icon" width="20" height="20">
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <svg width="20" height="20">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
-            <li>
-              <a href="#">
-                <svg class="footer-social-icon" width="20" height="20">
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <svg width="20" height="20">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li>
-              <a href="#">
-                <svg class="footer-social-icon" width="20" height="20">
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <svg width="20" height="20">
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
               </a>
             </li>
           </ul>
         </div>
-        <div class="footer-newsletter">
-          <h4>Zapisz się do newslettera</h4>
-          <form name="newsletter" autocomplete="on">
+        <div class="newsletter">
+          <h4 class="social__title">Zapisz się do newslettera</h4>
+          <form name="newsletter-form" autocomplete="on">
             <label>
-              <input type="email" name="newsletter-email" placeholder="E-mail" required />
+              <input class="newsletter__input" type="email" name="newsletter-email" placeholder="E-mail" required />
             </label>
-            <button type="submit">
+            <button class="newsletter__button" type="submit">
               Zapisz się
               <svg width="24" height="24">
                 <use href="./images/icons.svg#icon-send"></use>

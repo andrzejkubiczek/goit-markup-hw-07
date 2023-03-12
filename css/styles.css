@@ -66,7 +66,7 @@ svg {
   margin-right: 93px;
 }
 
-.logo-white {
+.logo--white {
   color: var(--white-color);
 }
 
@@ -179,7 +179,7 @@ nav {
 }
 
 .examples__cards,
-.examples__work-cards,
+.work__cards,
 .portfolio,
 .team__cards,
 .client__cards {
@@ -193,7 +193,7 @@ nav {
   flex-basis: calc((100% - 90px) / 4);
 }
 
-.examples__work-item,
+.work__item,
 .portfolio li {
   flex-basis: calc((100% - 60px) / 3);
 }
@@ -205,7 +205,7 @@ nav {
   color: var(--brand-color);
 }
 
-.examples__icon-bg {
+.examples__icon {
   background-color: var(--team-color);
   padding: 25px 100px;
   margin-bottom: 30px;
@@ -219,18 +219,18 @@ nav {
   color: var(--contact-color);
 }
 
-.examples__work-image {
+.work__image {
   position: relative;
 }
 
-.examples__work-label {
+.work__label {
   position: absolute;
   bottom: 0;
   background-color: var(--boxed-color);
   width: 100%;
 }
 
-.examples__work-text {
+.work__text {
   padding: 27px 0;
   color: var(--white-color);
   font-weight: 700;
@@ -241,7 +241,7 @@ nav {
   text-transform: uppercase;
 }
 
-.examples__title,
+.work__title,
 .team__title,
 .client__title {
   margin-bottom: 50px;
@@ -293,12 +293,12 @@ footer,
   gap: 10px;
 }
 
-.footer-social-icons li:not(:last-child) {
+.social__item:not(:last-child) {
   margin-right: 10px;
 }
 
 .team__social-link,
-.footer-social .footer-social-icons li a {
+.social__link {
   display: inline-flex;
   padding: 12px;
 }
@@ -337,60 +337,60 @@ footer,
   transition: border-color 250ms var(--cubic-bezier), fill 250ms var(--cubic-bezier);
 }
 
-footer {
+.footer {
   padding: 60px 0;
 }
 
-.footer,
-.footer-social-icons {
+.footer > .container,
+.social__icons {
   display: flex;
   justify-content: flex-start;
 }
 
-.footer-address {
+.address {
   margin-right: 70px;
 }
 
-.footer-address p {
+.address__content {
   font-style: normal;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
 }
 
-.footer-address p:not(:first-child) {
+.address__content:not(:first-child) {
   margin-top: 9px;
 }
 
-.footer-address p:first-child {
+.address__content:first-child {
   color: var(--white-color);
 }
 
-.footer-address address {
+.address > :nth-child(2) {
   margin-top: 20px;
 }
 
-.footer-address p a {
+.address__link {
   text-decoration: none;
   color: var(--footer-contact-color);
 }
 
-.footer-address p a:hover,
-.footer-address p a:focus {
+.address__link:hover,
+.address__link:focus {
   background-color: var(--link-color);
   transition: background-color 250ms var(--cubic-bezier);
 }
 
-.footer-social,
-.footer-newsletter {
+.social,
+.newsletter {
   margin-top: 12px;
 }
 
-.footer-social {
+.social {
   margin-right: 78px;
 }
 
-.footer h4 {
+.social__title {
   margin-bottom: 20px;
   color: var(--white-color);
   font-weight: 700;
@@ -400,14 +400,14 @@ footer {
   text-transform: uppercase;
 }
 
-.footer-social .footer-social-icons li a {
+.social__link {
   fill: var(--white-color);
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.footer-social .footer-social-icons li a:hover,
-.footer-social .footer-social-icons li a:focus {
+.social__link:hover,
+.social__link:focus {
   background-color: var(--link-color);
   transition: background-color 250ms var(--cubic-bezier);
 }
@@ -417,8 +417,8 @@ footer {
 }
 
 .portfolio-buttons-list,
-form[name='newsletter'],
-form[name='newsletter'] button {
+form[name='newsletter-form'],
+.newsletter__button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -561,12 +561,12 @@ form[name='newsletter'] button {
   transition: fill 250ms var(--cubic-bezier);
 }
 
-form[name='newsletter'] {
+form[name='newsletter-form'] {
   flex-wrap: wrap;
   gap: 12px;
 }
 
-form[name='newsletter'] input {
+.newsletter__input {
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: var(--border-radius);
   background-color: transparent;
@@ -579,7 +579,7 @@ form[name='newsletter'] input {
   color: var(--footer-contact-color);
 }
 
-form[name='newsletter'] button {
+.newsletter__button {
   gap: 24px;
   background-color: var(--link-color);
   color: var(--white-color);
