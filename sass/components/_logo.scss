@@ -1,0 +1,16 @@
+.logo {
+  font-family: $logoFont;
+  font-size: 26px;
+  text-decoration: none;
+  line-height: 1.2;
+  color: map-get($colors, 'dark');
+  margin-right: 93px;
+
+  &--white {
+    color: map-get($colors, 'light');
+  }
+
+  &--blue {
+    color: map-get($colors, 'link');
+  }
+}
