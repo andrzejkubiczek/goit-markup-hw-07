@@ -44,7 +44,7 @@
         </ul>
       </div>
     </header>
-    <!--portfolio-content-->
+    <!--portfolio-->
     <main>
       <section class="section">
         <div class="container portfolio-buttons">
@@ -254,56 +254,56 @@
         </div>
       </section>
     </main>
-    <footer>
-      <div class="footer container">
-        <div class="footer-address">
-          <a href="/" class="logo logo-white"> <span class="logo--blue">Web</span>Studio </a>
+    <footer class="footer">
+      <div class="container">
+        <div class="address">
+          <a href="/" class="logo logo--white"> <span class="logo--blue">Web</span>Studio </a>
           <address>
-            <p>m. Warszawa, Aleje Jerozolimskie 21</p>
-            <p><a href="mailto:info@example.com">info@example.com</a></p>
-            <p><a href="tel:+48111111111">+48 111 111 111</a></p>
+            <p class="address__content">m. Warszawa, Aleje Jerozolimskie 21</p>
+            <p class="address__content"><a class="address__link" href="mailto:info@example.com">info@example.com</a></p>
+            <p class="address__content"><a class="address__link" href="tel:+48111111111">+48 111 111 111</a></p>
           </address>
         </div>
-        <div class="footer-social">
-          <h4>Dołącz do nas</h4>
-          <ul class="footer-social-icons">
-            <li>
-              <a href="#">
-                <svg class="footer-social-icon" width="20" height="20">
+        <div class="social">
+          <h4 class="social__title">Dołącz do nas</h4>
+          <ul class="social__icons">
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <svg width="20" height="20">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
-            <li>
-              <a href="#">
-                <svg class="footer-social-icon" width="20" height="20">
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <svg width="20" height="20">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
-            <li>
-              <a href="#">
-                <svg class="footer-social-icon" width="20" height="20">
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <svg width="20" height="20">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li>
-              <a href="#">
-                <svg class="footer-social-icon" width="20" height="20">
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <svg width="20" height="20">
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
               </a>
             </li>
           </ul>
         </div>
-        <div class="footer-newsletter">
-          <h4>Zapisz się do newslettera</h4>
-          <form name="newsletter" autocomplete="on">
+        <div class="newsletter">
+          <h4 class="social__title">Zapisz się do newslettera</h4>
+          <form name="newsletter-form" autocomplete="on">
             <label>
-              <input type="email" name="newsletter-email" placeholder="E-mail" />
+              <input class="newsletter__input" type="email" name="newsletter-email" placeholder="E-mail" required />
             </label>
-            <button type="submit">
+            <button class="newsletter__button" type="submit">
               Zapisz się
               <svg width="24" height="24">
                 <use href="./images/icons.svg#icon-send"></use>
