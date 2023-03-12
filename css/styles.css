@@ -12,7 +12,7 @@
   --contact-color: #757575;
   --icons-color: #afb1b8;
   --border-color: #eee;
-  --portfolio-box-color: rgba(33, 150, 243, 0.9);
+  --portfolio__box-color: rgba(33, 150, 243, 0.9);
   --boxed-color: rgba(47, 48, 58, 0.8);
   --footer-contact-color: rgba(255, 255, 255, 0.6);
   --bg-color: #2f303a;
@@ -194,7 +194,7 @@ nav {
 }
 
 .work__item,
-.portfolio li {
+.portfolio__item {
   flex-basis: calc((100% - 60px) / 3);
 }
 
@@ -416,19 +416,16 @@ footer,
   margin-bottom: 50px;
 }
 
-.portfolio-buttons-list,
+.portfolio-buttons__list,
 form[name='newsletter-form'],
 .newsletter__button {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 8px;
 }
 
-.portfolio-buttons-list > li:not(:last-child) {
-  margin-right: 8px;
-}
-
-.portfolio-buttons-list button {
+.portfolio__button {
   border: 0;
   border-radius: var(--border-radius);
   background-color: var(--team-color);
@@ -442,8 +439,8 @@ form[name='newsletter-form'],
   cursor: pointer;
 }
 
-.portfolio-buttons-list button:focus,
-.portfolio-buttons-list button:hover {
+.portfolio__button:focus,
+.portfolio__button:hover {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   background-color: var(--link-color);
   color: var(--white-color);
@@ -451,19 +448,19 @@ form[name='newsletter-form'],
     box-shadow 250ms var(--cubic-bezier);
 }
 
-.portfolio-item:hover {
+.portfolio__item:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   transition: box-shadow 250ms var(--cubic-bezier);
 }
 
-.portfolio figcaption {
+.portfolio__label {
   border-bottom: 1px solid var(--border-color);
   border-right: 1px solid var(--border-color);
   border-left: 1px solid var(--border-color);
   padding: 20px 24px;
 }
 
-.portfolio-item-name {
+.portfolio__name {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -471,7 +468,7 @@ form[name='newsletter-form'],
   color: var(--brand-color);
 }
 
-.portfolio-item-spec {
+.portfolio__about {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.8;
@@ -479,12 +476,17 @@ form[name='newsletter-form'],
   color: var(--contact-color);
 }
 
-.portfolio-box {
+.portfolio__box {
   position: relative;
   overflow: hidden;
 }
 
-.portfolio-overlay {
+.portfolio__overlay {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.55;
+  letter-spacing: 0.03em;
+  color: var(--white-color);
   position: absolute;
   top: 0;
   left: 0;
@@ -493,18 +495,10 @@ form[name='newsletter-form'],
   padding: 49px 45px 49px 24px;
   transform: translateY(100%);
   transition: transform 250ms var(--cubic-bezier);
-  background-color: var(--portfolio-box-color);
+  background-color: var(--portfolio__box-color);
 }
 
-.portfolio-overlay p {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.55;
-  letter-spacing: 0.03em;
-  color: var(--white-color);
-}
-
-.portfolio-item:hover .portfolio-overlay {
+.portfolio__item:hover .portfolio__overlay {
   transform: translateY(0);
 }
 
