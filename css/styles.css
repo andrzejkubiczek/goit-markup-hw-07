@@ -182,7 +182,7 @@ nav {
 .examples__work-cards,
 .portfolio,
 .team__cards,
-.client-cards {
+.client__cards {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
@@ -243,7 +243,7 @@ nav {
 
 .examples__title,
 .team__title,
-.client-content h2 {
+.client__title {
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
@@ -316,11 +316,11 @@ footer,
   transition: color 250ms var(--cubic-bezier), background-color 250ms var(--cubic-bezier);
 }
 
-.client-cards li {
+.client__item {
   flex-basis: calc((100% - 150px) / 6);
 }
 
-.client-cards li a {
+.client__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -330,8 +330,8 @@ footer,
   fill: var(--icons-color);
 }
 
-.client-cards li a:hover,
-.client-cards li a:focus {
+.client__link:hover,
+.client__link:focus {
   border-color: var(--link-color);
   fill: var(--link-color);
   transition: border-color 250ms var(--cubic-bezier), fill 250ms var(--cubic-bezier);
