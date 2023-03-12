@@ -629,18 +629,18 @@ form[name='modal-form'] {
   height: 40px;
 }
 
-.modal__input:focus,
-.modal__input:focus + svg,
+.modal__input:focus-within,
+.modal__input:focus-within + .modal__icon,
 .modal__input:hover,
-.modal__input:hover + svg,
-.modal__textarea:focus,
+.modal__input:hover + .modal__icon,
+.modal__textarea:focus-within,
 .modal__textarea:hover {
   border-color: var(--link-color);
   fill: var(--link-color);
   transition: border-color 250ms var(--cubic-bezier), fill 250ms var(--cubic-bezier);
 }
 
-.modal__item svg {
+.modal__icon {
   position: absolute;
   top: 28px;
   left: 14px;
