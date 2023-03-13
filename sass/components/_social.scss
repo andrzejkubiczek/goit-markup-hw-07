@@ -15,10 +15,7 @@
   &__title {
     margin-bottom: 20px;
     color: map-get($colors, 'light');
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.1;
-    letter-spacing: 0.03em;
+    @include font(14px, 700, 1.1, 0.03em);
     text-transform: uppercase;
   }
 
