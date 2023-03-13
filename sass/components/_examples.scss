@@ -10,6 +10,7 @@
   }
 
   &__label {
+    @extend .examples;
     font-weight: 700;
     text-transform: uppercase;
     color: map-get($colors, 'primary');
@@ -23,6 +24,7 @@
   }
 
   &__content {
+    @extend .examples;
     margin: 10px 0 96px;
     line-height: 1.7;
     color: map-get($colors, 'contact');
