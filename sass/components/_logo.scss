@@ -1,9 +1,8 @@
 .logo {
   font-family: $logoFont;
-  font-size: 26px;
-  text-decoration: none;
-  line-height: 1.2;
+  @include font(26px, 700, 1.2, 0.03em);
   color: map-get($colors, 'dark');
+  text-decoration: none;
   margin-right: 93px;
 
   &--white {

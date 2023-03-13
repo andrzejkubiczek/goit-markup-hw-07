@@ -19,10 +19,7 @@ nav {
 
   &__link {
     color: map-get($colors, 'primary');
-    font-weight: 500;
-    font-size: 14px;
-    letter-spacing: 0.02em;
-    line-height: 1.1;
+    @include font(14px, 500, 1.1, 0.02em);
     text-decoration: none;
   }
 
