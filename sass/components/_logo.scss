@@ -1,5 +1,5 @@
 .logo {
-  font-family: $logoFont;
+  font-family: 'Raleway', sans-serif;
   @include font(26px, 700, 1.2, 0.03em);
   color: map-get($colors, 'dark');
   text-decoration: none;
