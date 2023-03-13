@@ -1,0 +1,37 @@
+form[name='newsletter-form'] {
+  @extend .portfolio-buttons__list;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.newsletter {
+  margin-top: 12px;
+
+  &__button {
+    @extend .portfolio-buttons__list;
+  }
+
+  &__input {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: $borderRadius;
+    background-color: transparent;
+    outline: none;
+    padding: 15px 16px;
+    min-width: 358px;
+    @include font(16px, 400, 1.25, 0.03em);
+    color: map-get($colors, 'footerContact');
+  }
+
+  &__button {
+    gap: 24px;
+    background-color: map-get($colors, 'link');
+    color: map-get($colors, 'light');
+    fill: currentColor;
+    @include font(16px, 700, 1.875, 0.06em);
+    padding: 10px 28px 10px 42px;
+    border: 0;
+    border-radius: $borderRadius;
+    box-shadow: $boxShadow;
+    cursor: pointer;
+  }
+}
