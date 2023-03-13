@@ -1,0 +1,30 @@
+.client {
+  &__cards {
+    @extend .portfolio;
+  }
+
+  &__item {
+    flex-basis: calc((100% - 150px) / 6);
+  }
+
+  &__title {
+    @extend .work__title;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid map-get($colors, 'icons');
+    border-radius: $borderRadius;
+    padding: 15px 0;
+    fill: map-get($colors, 'icons');
+
+    &:hover,
+    &:focus {
+      border-color: map-get($colors, 'link');
+      fill: map-get($colors, 'link');
+      transition: border-color 250ms $cubicBezier, fill 250ms $cubicBezier;
+    }
+  }
+}
